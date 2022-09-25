@@ -1,9 +1,22 @@
 function prime(num){
- for(let i=0; i<=num; i++){
+ let counter=0;
+
+ for(let i=1; i<=num; i++){
   if(num%i){
-    return true;
+    counter++;
    }
  }
-   return false;
-}
-  prime(13);
+   if(counter==2){
+      return true;
+   }
+      return false;
+  }
+   
+  let answer = prime(13);
+
+    if(answer==true){
+      console.log("Prime");
+    } else {
+      console.log("Not prime");
+  }
+      
